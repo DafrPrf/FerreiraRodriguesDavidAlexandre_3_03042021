@@ -2,9 +2,18 @@
 $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
+$bcg-lightgrey: #f6f6f6;
+
+// btn linear gradient
+$bccLinearGradient: linear-gradient(
+  -5deg,
+  rgba(147, 86, 220, 1) 0%,
+  rgba(255, 121, 218, 1) 96%
+);
 
 // shadow
 $headerShadow: 0px 0px 5px 2px #cfcfcf;
+$btnShadow: 1px 2px 5px 2px #cfcfcf;
 
 // typography
 $shrikhand: "Shrikhand", cursive;
@@ -15,3 +24,9 @@ $fw900: 900;
 $fw700: 700;
 $fw500: 500;
 $fw300: 300;
+
+// font-size
+$fz26: 2.6rem;
+$fz22: 2.2rem;
+$fz16: 1.6rem;
+$fz14: 1.4rem;
