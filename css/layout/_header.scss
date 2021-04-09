@@ -1,0 +1,36 @@
+.header {
+  &__logo_container {
+    height: 6.4rem;
+    box-shadow: $headerShadow;
+    @include flex(row, center, center);
+
+    a {
+      padding: 2.3rem 0 1.5rem 0;
+    }
+  }
+
+  &__search_bar {
+    height: 5rem;
+    background-color: #eaeaea;
+    padding-left: 8rem;
+
+    @include flex(row, center, center);
+
+    .fa-map-marker-alt {
+      font-size: 1.6rem;
+    }
+
+    input {
+      border: none;
+      background-color: #eaeaea;
+      padding: 1.6rem 1rem 1.5rem 2rem;
+      font-weight: $fw700;
+      font-size: 1.6rem;
+
+      &::placeholder {
+        font-weight: $fw700;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
