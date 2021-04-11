@@ -426,4 +426,22 @@ html {
   color: #008766;
   background-color: #99e2d0;
 }
+
+.footer {
+  color: #fff;
+  background-color: #353535;
+  padding: 2.6rem;
+  line-height: 2.6rem;
+  font-size: 1.6rem;
+}
+
+.footer__title {
+  font-family: "Shrikhand", cursive;
+  font-size: 2.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.footer__icons {
+  margin-right: 1rem;
+}
 /*# sourceMappingURL=main.css.map */

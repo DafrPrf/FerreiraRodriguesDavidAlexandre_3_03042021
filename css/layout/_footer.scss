@@ -1,0 +1,17 @@
+.footer {
+  color: #fff;
+  background-color: #353535;
+  padding: 2.6rem;
+  line-height: 2.6rem;
+  font-size: $fz16;
+
+  &__title {
+    font-family: $shrikhand;
+    font-size: $fz22;
+    margin-bottom: 2.4rem;
+  }
+
+  &__icons {
+    margin-right: 1rem;
+  }
+}
