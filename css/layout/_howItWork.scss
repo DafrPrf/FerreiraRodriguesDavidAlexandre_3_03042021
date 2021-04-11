@@ -1,0 +1,49 @@
+.how_it_work {
+  @include flex(column, center, center);
+  padding: 5rem 2.2rem 6.5rem 2.2rem;
+
+  h2 {
+    font-weight: $fw900;
+    font-size: $fz26;
+    margin-bottom: 3rem;
+    align-self: flex-start;
+  }
+
+  li {
+    font-size: $fz16;
+    position: relative;
+    width: 32.4rem;
+    height: 7.5rem;
+    background-color: #f6f6f6;
+    box-shadow: $btnShadow;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    @include flex(row, center, flex-start);
+
+    span {
+      position: absolute;
+      left: -1.2rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      color: #fff;
+      background-color: $primary;
+      border-radius: 2rem;
+      font-size: $fz16;
+      @include flex(row, center, center);
+    }
+
+    &:last-child {
+      background-color: #f5edff;
+    }
+  }
+
+  &__icon {
+    font-size: 1.8rem;
+    color: #7e7e7e;
+    margin: 0 2.6rem 0 2.6rem;
+  }
+
+  &--active {
+    color: $primary;
+  }
+}

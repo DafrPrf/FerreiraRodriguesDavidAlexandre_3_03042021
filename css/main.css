@@ -229,6 +229,16 @@ html {
   font-size: 1.6rem;
 }
 
+.home_intro a {
+  font-size: 1.6rem;
+  padding: 1.5rem 2.5rem;
+  border-radius: 4rem;
+  color: #fff;
+  background: linear-gradient(-5deg, #9356dc 0%, #ff79da 96%);
+  -webkit-box-shadow: 1px 2px 5px 2px #cfcfcf;
+          box-shadow: 1px 2px 5px 2px #cfcfcf;
+}
+
 .home_intro {
   padding: 4rem 3rem 6rem 3rem;
   background-color: #f6f6f6;
@@ -246,13 +256,91 @@ html {
   color: #7e7e7e;
 }
 
-.home_intro a {
+.how_it_work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 2.2rem 6.5rem 2.2rem;
+}
+
+.how_it_work h2 {
+  font-weight: 900;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.how_it_work li {
   font-size: 1.6rem;
-  padding: 1.5rem 2.5rem;
-  border-radius: 4rem;
-  color: #fff;
-  background: linear-gradient(-5deg, #9356dc 0%, #ff79da 96%);
+  position: relative;
+  width: 32.4rem;
+  height: 7.5rem;
+  background-color: #f6f6f6;
   -webkit-box-shadow: 1px 2px 5px 2px #cfcfcf;
           box-shadow: 1px 2px 5px 2px #cfcfcf;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.how_it_work li span {
+  position: absolute;
+  left: -1.2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #fff;
+  background-color: #9356dc;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.how_it_work li:last-child {
+  background-color: #f5edff;
+}
+
+.how_it_work__icon {
+  font-size: 1.8rem;
+  color: #7e7e7e;
+  margin: 0 2.6rem 0 2.6rem;
+}
+
+.how_it_work--active {
+  color: #9356dc;
 }
 /*# sourceMappingURL=main.css.map */
