@@ -44,11 +44,12 @@
       background-color: $tertiary;
       top: 2rem;
       left: 0;
+      animation: borderSlide 5s;
     }
   }
 
   &__description {
-    min-width: 27rem;
+    width: 25rem;
     line-height: 2.5rem;
     padding: 1rem;
     font-weight: $fw900;
@@ -64,7 +65,7 @@
   }
 
   &__price {
-    min-width: 8rem;
+    width: 4rem;
     align-self: flex-end;
     margin: 0 0 0.5rem 2rem;
     padding: 1rem;
@@ -83,7 +84,7 @@
     @include flex(row, center, space-between);
 
     &--check {
-      min-width: 6rem;
+      width: 0;
       height: 100%;
       border-radius: 0 1.4rem 1.4rem 0;
       background-color: $tertiary;
@@ -94,12 +95,33 @@
     }
 
     &:hover {
+      .main__card--check {
+        width: 7rem;
+        transition: width 1s;
+      }
+
+      .fa-check-circle {
+        transform: rotate(360deg);
+        transition: transform 0.5s;
+      }
       .main__description {
         min-width: 20rem;
       }
       .main__price {
         min-width: 5rem;
       }
+    }
+
+    &--slide1 {
+      animation: slideUp 3s;
+    }
+
+    &--slide2 {
+      animation: slideUp 6s;
+    }
+
+    &--slide3 {
+      animation: slideUp 12s;
     }
   }
 }

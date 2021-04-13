@@ -5,6 +5,11 @@
   color: #fff;
   background: $bccLinearGradient;
   box-shadow: $btnShadow;
+
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s;
+  }
 }
 
 .main__btn {

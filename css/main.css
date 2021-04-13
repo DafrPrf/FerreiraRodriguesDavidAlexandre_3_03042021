@@ -1,3 +1,53 @@
+@-webkit-keyframes slideUp {
+  from {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes borderSlide {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 10rem;
+  }
+  100% {
+    width: 4rem;
+  }
+}
+
+@keyframes borderSlide {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 10rem;
+  }
+  100% {
+    width: 4rem;
+  }
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -258,6 +308,12 @@ html {
           box-shadow: 1px 2px 5px 2px #cfcfcf;
 }
 
+.btn:hover {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
 .main__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,6 +458,13 @@ html {
   -webkit-box-shadow: 1px 2px 5px 2px #cfcfcf;
           box-shadow: 1px 2px 5px 2px #cfcfcf;
   margin: 1.7rem 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.restaurants__container:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .restaurants__image {
@@ -453,6 +516,9 @@ html {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  cursor: pointer;
 }
 
 .restaurants__new {
@@ -551,10 +617,12 @@ html {
   background-color: #99e2d0;
   top: 2rem;
   left: 0;
+  -webkit-animation: borderSlide 5s;
+          animation: borderSlide 5s;
 }
 
 .main__description {
-  min-width: 27rem;
+  width: 25rem;
   line-height: 2.5rem;
   padding: 1rem;
   font-weight: 900;
@@ -571,7 +639,7 @@ html {
 }
 
 .main__price {
-  min-width: 8rem;
+  width: 4rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin: 0 0 0.5rem 2rem;
@@ -604,7 +672,7 @@ html {
 }
 
 .main__card--check {
-  min-width: 6rem;
+  width: 0;
   height: 100%;
   border-radius: 0 1.4rem 1.4rem 0;
   background-color: #99e2d0;
@@ -625,12 +693,42 @@ html {
           justify-content: center;
 }
 
+.main__card:hover .main__card--check {
+  width: 7rem;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
+.main__card:hover .fa-check-circle {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
 .main__card:hover .main__description {
   min-width: 20rem;
 }
 
 .main__card:hover .main__price {
   min-width: 5rem;
+}
+
+.main__card--slide1 {
+  -webkit-animation: slideUp 3s;
+          animation: slideUp 3s;
+}
+
+.main__card--slide2 {
+  -webkit-animation: slideUp 6s;
+          animation: slideUp 6s;
+}
+
+.main__card--slide3 {
+  -webkit-animation: slideUp 12s;
+          animation: slideUp 12s;
 }
 
 .footer {
