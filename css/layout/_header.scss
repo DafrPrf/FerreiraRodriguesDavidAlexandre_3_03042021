@@ -1,11 +1,18 @@
 .header {
   &__logo_container {
+    position: relative;
+    z-index: 1;
     height: 6.4rem;
     box-shadow: $headerShadow;
+
     @include flex(row, center, center);
 
-    a {
+    &__logo {
       padding: 2.3rem 0 1.5rem 0;
+    }
+
+    &--bxShwNone {
+      box-shadow: none;
     }
   }
 
@@ -27,18 +34,18 @@
     .fa-map-marker-alt {
       font-size: $fz16;
     }
+  }
 
-    input {
-      border: none;
-      background-color: #eaeaea;
-      padding: 1.6rem 1rem 1.5rem 2rem;
+  &__search_bar_input {
+    border: none;
+    background-color: #eaeaea;
+    padding: 1.6rem 1rem 1.5rem 2rem;
+    font-weight: $fw700;
+    font-size: $fz16;
+
+    &::placeholder {
       font-weight: $fw700;
-      font-size: $fz16;
-
-      &::placeholder {
-        font-weight: $fw700;
-        font-size: 1.6rem;
-      }
+      font-size: 1.6rem;
     }
   }
 }

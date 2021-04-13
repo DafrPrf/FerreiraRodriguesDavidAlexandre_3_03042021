@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
-      integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
+      src="https://kit.fontawesome.com/c6cc978061.js"
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -21,38 +19,44 @@
   <body>
     <header class="header">
       <div class="header__logo_container">
-        <a href="index.html">
+        <a href="index.html" class="header__logo">
           <img src="./images/logo/ohmyfood@2x.svg" alt="Ohmyfood logo" />
         </a>
       </div>
 
       <div class="header__search_bar">
         <i class="fas fa-map-marker-alt"></i>
-        <input type="text" placeholder="Paris, Belleville" />
+        <input
+          class="header__search_bar_input"
+          type="text"
+          placeholder="Paris, Belleville"
+        />
       </div>
     </header>
 
     <section class="home_intro">
-      <h1>Réservez le menu qui vous convient</h1>
-      <p>Découvrez des restaurantrs d'exception, séléctionnés par nous soins</p>
-      <a href="#restaurants">Explorer nous restaurants</a>
+      <h1 class="home_intro__title">Réservez le menu qui vous convient</h1>
+      <p class="home_intro__description">
+        Découvrez des restaurantrs d'exception, séléctionnés par nous soins
+      </p>
+      <a href="#restaurants" class="btn">Explorer nous restaurants</a>
     </section>
 
     <section class="how_it_work">
-      <h2>Fonctionnement</h2>
+      <h2 class="how_it_work__title">Fonctionnement</h2>
       <ul>
-        <li>
-          <span>1</span>
+        <li class="how_it_work__card">
+          <span class="how_it_work__nb">1</span>
           <i class="fas how_it_work__icon fa-mobile-alt"></i>
           <p>Choisissez un restaurant</p>
         </li>
-        <li>
-          <span>2</span>
+        <li class="how_it_work__card">
+          <span class="how_it_work__nb">2</span>
           <i class="fas how_it_work__icon fa-list-ul"></i>
           <p>Composez votre menu</p>
         </li>
-        <li>
-          <span>3</span>
+        <li class="how_it_work__card">
+          <span class="how_it_work__nb">3</span>
           <i class="fas how_it_work__icon how_it_work--active fa-store"></i>
           <p>Dégoustez au restaurant</p>
         </li>
@@ -78,7 +82,7 @@
               <p>Ménilmontant</p>
             </div>
 
-            <i class="fas fa-heart restaurants__icon"></i>
+            <i class="far fa-heart restaurants__icon"></i>
           </figcaption>
         </figure>
       </a>
@@ -95,7 +99,7 @@
           <figcaption class="restaurants__description">
             <div class="restaurants__text">
               <p>La note enchantée</p>
-              <p>Ménilmontant</p>
+              <p>Charonne</p>
             </div>
 
             <i class="far fa-heart restaurants__icon"></i>

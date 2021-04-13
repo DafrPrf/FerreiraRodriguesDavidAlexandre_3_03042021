@@ -22,6 +22,7 @@
     border-radius: 1.5rem 1.5rem 0 0;
     width: 100%;
     height: 70%;
+    object-fit: cover;
   }
 
   &__description {
@@ -35,19 +36,20 @@
     font-size: $fz16;
 
     :first-child {
-      font-weight: $fw900;
+      font-weight: $fw700;
     }
 
     :last-child {
-      font-weight: $fw500;
+      font-weight: $fw300;
     }
   }
 
   &__icon {
     font-size: $fz22;
-    // color: #7e7e7e;
+    color: #7e7e7e;
 
     &:hover {
+      font-weight: 900;
       background: linear-gradient(-137deg, $primary -33%, $secondary 96%);
       background-clip: text;
       -webkit-background-clip: text;
@@ -59,9 +61,13 @@
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    padding: 0.8rem 1.5rem;
-    border-radius: 0.4rem;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 0.2rem;
     color: $darkenTertiary;
     background-color: $tertiary;
+    font-size: $fz16;
+
+    @include flex(row, center, center);
   }
 }

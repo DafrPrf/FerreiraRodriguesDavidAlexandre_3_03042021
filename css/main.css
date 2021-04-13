@@ -160,6 +160,8 @@ html {
 }
 
 .header__logo_container {
+  position: relative;
+  z-index: 1;
   height: 6.4rem;
   -webkit-box-shadow: 0px 0px 5px 2px #cfcfcf;
           box-shadow: 0px 0px 5px 2px #cfcfcf;
@@ -178,8 +180,13 @@ html {
           justify-content: center;
 }
 
-.header__logo_container a {
+.header__logo_container__logo {
   padding: 2.3rem 0 1.5rem 0;
+}
+
+.header__logo_container--bxShwNone {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .header__arrow {
@@ -213,7 +220,7 @@ html {
   font-size: 1.6rem;
 }
 
-.header__search_bar input {
+.header__search_bar_input {
   border: none;
   background-color: #eaeaea;
   padding: 1.6rem 1rem 1.5rem 2rem;
@@ -221,27 +228,27 @@ html {
   font-size: 1.6rem;
 }
 
-.header__search_bar input::-webkit-input-placeholder {
+.header__search_bar_input::-webkit-input-placeholder {
   font-weight: 700;
   font-size: 1.6rem;
 }
 
-.header__search_bar input:-ms-input-placeholder {
+.header__search_bar_input:-ms-input-placeholder {
   font-weight: 700;
   font-size: 1.6rem;
 }
 
-.header__search_bar input::-ms-input-placeholder {
+.header__search_bar_input::-ms-input-placeholder {
   font-weight: 700;
   font-size: 1.6rem;
 }
 
-.header__search_bar input::placeholder {
+.header__search_bar_input::placeholder {
   font-weight: 700;
   font-size: 1.6rem;
 }
 
-.home_intro a {
+.btn {
   font-size: 1.6rem;
   padding: 1.5rem 2.5rem;
   border-radius: 4rem;
@@ -251,18 +258,37 @@ html {
           box-shadow: 1px 2px 5px 2px #cfcfcf;
 }
 
+.main__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20rem;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+}
+
 .home_intro {
   padding: 4rem 3rem 6rem 3rem;
   background-color: #f6f6f6;
   text-align: center;
 }
 
-.home_intro h1 {
+.home_intro__title {
   font-size: 2.8rem;
   font-weight: 900;
 }
 
-.home_intro p {
+.home_intro__description {
   margin: 2.2rem 0 4rem 0;
   font-size: 1.6rem;
   color: #7e7e7e;
@@ -285,7 +311,7 @@ html {
   padding: 5rem 2.2rem 6.5rem 2.2rem;
 }
 
-.how_it_work h2 {
+.how_it_work__title {
   font-weight: 900;
   font-size: 2.6rem;
   margin-bottom: 3rem;
@@ -293,7 +319,7 @@ html {
       align-self: flex-start;
 }
 
-.how_it_work li {
+.how_it_work__card {
   font-size: 1.6rem;
   position: relative;
   width: 32.4rem;
@@ -318,7 +344,11 @@ html {
           justify-content: flex-start;
 }
 
-.how_it_work li span {
+.how_it_work__card:last-child {
+  background-color: #f5edff;
+}
+
+.how_it_work__nb {
   position: absolute;
   left: -1.2rem;
   width: 2.5rem;
@@ -342,14 +372,10 @@ html {
           justify-content: center;
 }
 
-.how_it_work li:last-child {
-  background-color: #f5edff;
-}
-
 .how_it_work__icon {
   font-size: 1.8rem;
   color: #7e7e7e;
-  margin: 0 2.6rem 0 2.6rem;
+  margin: 0 2.6rem 0 3.6rem;
 }
 
 .how_it_work--active {
@@ -382,6 +408,8 @@ html {
   border-radius: 1.5rem 1.5rem 0 0;
   width: 100%;
   height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .restaurants__description {
@@ -407,18 +435,20 @@ html {
 }
 
 .restaurants__text :first-child {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .restaurants__text :last-child {
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .restaurants__icon {
   font-size: 2.2rem;
+  color: #7e7e7e;
 }
 
 .restaurants__icon:hover {
+  font-weight: 900;
   background: linear-gradient(-137deg, #9356dc -33%, #ff79da 96%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -429,20 +459,40 @@ html {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  padding: 0.8rem 1.5rem;
-  border-radius: 0.4rem;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0.2rem;
   color: #008766;
   background-color: #99e2d0;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main__image {
   width: 100%;
-  height: auto;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: -1;
 }
 
 .main__container {
   width: 100%;
-  position: absolute;
+  height: auto;
+  margin-top: -3rem;
   top: 27.7rem;
   background-color: #fff;
   border-radius: 2rem 2rem 0 0;
@@ -450,16 +500,6 @@ html {
 }
 
 .main__wrapper {
-  padding: 4rem 2rem;
-}
-
-.main__title {
-  font-size: 2.6rem;
-  font-weight: 900;
-  font-family: "Shrikhand", cursive;
-}
-
-.main__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,34 +507,83 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 22rem;
+  padding: 4rem 2rem 0 2rem;
+}
+
+.main__headerTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-size: 2.6rem;
+  font-weight: 500;
+  font-family: "Shrikhand", cursive;
+}
+
+.main__titles {
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 3rem;
+}
+
+.main__titles::after {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 0.35rem;
+  background-color: #99e2d0;
+  top: 2rem;
+  left: 0;
+}
+
+.main__description {
+  min-width: 27rem;
   line-height: 2.5rem;
   padding: 1rem;
-  font-weight: 300;
+  font-weight: 900;
+}
+
+.main__description p {
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.main__description span {
-  font-weight: normal;
+.main__description--fw {
+  font-weight: 300;
 }
 
 .main__price {
-  width: 6rem;
+  min-width: 8rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0 0 0.5rem 2rem;
   padding: 1rem;
 }
 
 .main__card {
+  overflow-x: hidden;
   width: 35rem;
   height: 7rem;
   background-color: #fff;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   -webkit-box-shadow: 1px 2px 5px 2px #cfcfcf;
           box-shadow: 1px 2px 5px 2px #cfcfcf;
   border-radius: 1.4rem;
@@ -515,11 +604,12 @@ html {
 }
 
 .main__card--check {
-  width: 6rem;
+  min-width: 6rem;
   height: 100%;
   border-radius: 0 1.4rem 1.4rem 0;
   background-color: #99e2d0;
   color: #fff;
+  font-size: 2.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,6 +623,14 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.main__card:hover .main__description {
+  min-width: 20rem;
+}
+
+.main__card:hover .main__price {
+  min-width: 5rem;
 }
 
 .footer {

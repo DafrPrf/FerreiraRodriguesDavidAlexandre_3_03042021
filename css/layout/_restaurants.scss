@@ -1,12 +1,16 @@
 .main {
   &__image {
     width: 100%;
-    height: auto;
+    height: 25rem;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
   }
 
   &__container {
     width: 100%;
-    position: absolute;
+    height: auto;
+    margin-top: -3rem;
     top: 27.7rem;
     background-color: #fff;
     border-radius: 2rem 2rem 0 0;
@@ -14,39 +18,64 @@
   }
 
   &__wrapper {
-    padding: 4rem 2rem;
+    @include flex(column, center, center);
+    padding: 4rem 2rem 0 2rem;
   }
 
-  &__title {
+  &__headerTitle {
+    @include flex(row, center, space-between);
+    width: 100%;
     font-size: $fz26;
-    font-weight: $fw900;
+    font-weight: $fw500;
     font-family: $shrikhand;
   }
 
+  &__titles {
+    position: relative;
+    font-size: $fz16;
+    font-weight: $fw300;
+    margin-top: 3rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 4rem;
+      height: 0.35rem;
+      background-color: $tertiary;
+      top: 2rem;
+      left: 0;
+    }
+  }
+
   &__description {
-    @include flex(column, flex-start, center);
-    width: 22rem;
+    min-width: 27rem;
     line-height: 2.5rem;
     padding: 1rem;
-    font-weight: $fw300;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    font-weight: $fw900;
+    p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 
-    span {
-      font-weight: normal;
+    &--fw {
+      font-weight: $fw300;
     }
   }
 
   &__price {
-    width: 6rem;
+    min-width: 8rem;
+    align-self: flex-end;
+    margin: 0 0 0.5rem 2rem;
     padding: 1rem;
   }
 
   &__card {
+    overflow-x: hidden;
     width: 35rem;
     height: 7rem;
     background-color: #fff;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     box-shadow: $btnShadow;
     border-radius: 1.4rem;
     font-size: $fz16;
@@ -54,14 +83,23 @@
     @include flex(row, center, space-between);
 
     &--check {
-      // overflow: hidden;
-      width: 6rem;
+      min-width: 6rem;
       height: 100%;
       border-radius: 0 1.4rem 1.4rem 0;
       background-color: $tertiary;
       color: #fff;
+      font-size: $fz22;
 
       @include flex(row, center, center);
+    }
+
+    &:hover {
+      .main__description {
+        min-width: 20rem;
+      }
+      .main__price {
+        min-width: 5rem;
+      }
     }
   }
 }
