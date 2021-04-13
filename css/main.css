@@ -182,6 +182,14 @@ html {
   padding: 2.3rem 0 1.5rem 0;
 }
 
+.header__arrow {
+  font-size: 2.2rem;
+  position: absolute;
+  left: 3rem;
+  top: 2.5rem;
+  color: #353535;
+}
+
 .header__search_bar {
   height: 5rem;
   background-color: #eaeaea;
@@ -425,6 +433,106 @@ html {
   border-radius: 0.4rem;
   color: #008766;
   background-color: #99e2d0;
+}
+
+.main__image {
+  width: 100%;
+  height: auto;
+}
+
+.main__container {
+  width: 100%;
+  position: absolute;
+  top: 27.7rem;
+  background-color: #fff;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+}
+
+.main__wrapper {
+  padding: 4rem 2rem;
+}
+
+.main__title {
+  font-size: 2.6rem;
+  font-weight: 900;
+  font-family: "Shrikhand", cursive;
+}
+
+.main__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 22rem;
+  line-height: 2.5rem;
+  padding: 1rem;
+  font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.main__description span {
+  font-weight: normal;
+}
+
+.main__price {
+  width: 6rem;
+  padding: 1rem;
+}
+
+.main__card {
+  width: 35rem;
+  height: 7rem;
+  background-color: #fff;
+  margin-top: 1.5rem;
+  -webkit-box-shadow: 1px 2px 5px 2px #cfcfcf;
+          box-shadow: 1px 2px 5px 2px #cfcfcf;
+  border-radius: 1.4rem;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__card--check {
+  width: 6rem;
+  height: 100%;
+  border-radius: 0 1.4rem 1.4rem 0;
+  background-color: #99e2d0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer {

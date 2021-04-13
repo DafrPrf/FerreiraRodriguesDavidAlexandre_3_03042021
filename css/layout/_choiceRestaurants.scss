@@ -1,0 +1,67 @@
+.restaurants {
+  padding: 6rem 2.2rem 6rem 2.2rem;
+  background-color: $bcg-lightgrey;
+
+  &__title {
+    font-size: $fz26;
+    font-weight: $fw900;
+    margin-bottom: 1rem;
+  }
+
+  &__container {
+    position: relative;
+    width: 33.7rem;
+    height: 25rem;
+    border-radius: 1.5rem;
+    background-color: #fff;
+    box-shadow: $btnShadow;
+    margin: 1.7rem 0;
+  }
+
+  &__image {
+    border-radius: 1.5rem 1.5rem 0 0;
+    width: 100%;
+    height: 70%;
+  }
+
+  &__description {
+    padding: 1.5rem 2.5rem 2rem 1.4rem;
+
+    @include flex(row, center, space-between);
+  }
+
+  &__text {
+    line-height: 2rem;
+    font-size: $fz16;
+
+    :first-child {
+      font-weight: $fw900;
+    }
+
+    :last-child {
+      font-weight: $fw500;
+    }
+  }
+
+  &__icon {
+    font-size: $fz22;
+    // color: #7e7e7e;
+
+    &:hover {
+      background: linear-gradient(-137deg, $primary -33%, $secondary 96%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+
+  &__new {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.4rem;
+    color: $darkenTertiary;
+    background-color: $tertiary;
+  }
+}

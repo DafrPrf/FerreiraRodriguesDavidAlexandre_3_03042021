@@ -9,6 +9,14 @@
     }
   }
 
+  &__arrow {
+    font-size: $fz22;
+    position: absolute;
+    left: 3rem;
+    top: 2.5rem;
+    color: #353535;
+  }
+
   &__search_bar {
     height: 5rem;
     background-color: #eaeaea;
