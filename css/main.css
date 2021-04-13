@@ -197,7 +197,8 @@ html {
 
 input:focus,
 textarea:focus,
-select:focus {
+select:focus,
+a:focus {
   outline: none;
 }
 
