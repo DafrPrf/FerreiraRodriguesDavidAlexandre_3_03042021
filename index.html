@@ -35,11 +35,17 @@
     </header>
 
     <section class="home_intro">
-      <h1 class="home_intro__title">Réservez le menu qui vous convient</h1>
-      <p class="home_intro__description">
-        Découvrez des restaurantrs d'exception, séléctionnés par nous soins
-      </p>
-      <a href="#restaurants" class="btn">Explorer nous restaurants</a>
+      <div class="home_intro__img_box1"></div>
+
+      <div class="home_intro__description_container">
+        <h1 class="home_intro__title">Réservez le menu qui vous convient</h1>
+        <p class="home_intro__description">
+          Découvrez des restaurantrs d'exception, séléctionnés par nous soins
+        </p>
+        <a href="#restaurants" class="btn">Explorer nous restaurants</a>
+      </div>
+
+      <div class="home_intro__img_box2"></div>
     </section>
 
     <section class="how_it_work">
@@ -63,83 +69,84 @@
       </ul>
     </section>
 
-    <section class="restaurants">
+    <section id="restaurants" class="restaurants">
       <h2 class="restaurants__title">Restaurants</h2>
-
-      <a id="laPaletteDuGout" href="laPaletteDuGout.html">
-        <figure class="restaurants__container">
-          <div class="restaurants__new">
-            <p>Nouveau</p>
-          </div>
-          <img
-            class="restaurants__image"
-            src="./images/restaurants/la_palette_du_gout.jpg"
-            alt="Restaurant La Palette du Goût"
-          />
-          <figcaption class="restaurants__description">
-            <div class="restaurants__text">
-              <p>La palette du goût</p>
-              <p>Ménilmontant</p>
+      <div class="restaurants--flexRow">
+        <a id="laPaletteDuGout" href="laPaletteDuGout.html">
+          <figure class="restaurants__container">
+            <div class="restaurants__new">
+              <p>Nouveau</p>
             </div>
+            <img
+              class="restaurants__image"
+              src="./images/restaurants/la_palette_du_gout.jpg"
+              alt="Restaurant La Palette du Goût"
+            />
+            <figcaption class="restaurants__description">
+              <div class="restaurants__text">
+                <p>La palette du goût</p>
+                <p>Ménilmontant</p>
+              </div>
 
-            <i class="far fa-heart restaurants__icon"></i>
-          </figcaption>
-        </figure>
-      </a>
-      <a id="laNoteEnchantee" href="#">
-        <figure class="restaurants__container">
-          <div class="restaurants__new">
-            <p>Nouveau</p>
-          </div>
-          <img
-            class="restaurants__image"
-            src="./images/restaurants/la_note_enchantee.jpg"
-            alt="Restaurant La Note Enchantée"
-          />
-          <figcaption class="restaurants__description">
-            <div class="restaurants__text">
-              <p>La note enchantée</p>
-              <p>Charonne</p>
+              <i class="far fa-heart restaurants__icon"></i>
+            </figcaption>
+          </figure>
+        </a>
+        <a id="laNoteEnchantee" href="#">
+          <figure class="restaurants__container">
+            <div class="restaurants__new">
+              <p>Nouveau</p>
             </div>
+            <img
+              class="restaurants__image"
+              src="./images/restaurants/la_note_enchantee.jpg"
+              alt="Restaurant La Note Enchantée"
+            />
+            <figcaption class="restaurants__description">
+              <div class="restaurants__text">
+                <p>La note enchantée</p>
+                <p>Charonne</p>
+              </div>
 
-            <i class="far fa-heart restaurants__icon"></i>
-          </figcaption>
-        </figure>
-      </a>
-      <a id="aLaFrancaise" href="#">
-        <figure class="restaurants__container">
-          <img
-            class="restaurants__image"
-            src="./images/restaurants/a_la_française.jpg"
-            alt="Restaurant A la Française"
-          />
-          <figcaption class="restaurants__description">
-            <div class="restaurants__text">
-              <p>A la française</p>
-              <p>Cité rouge</p>
-            </div>
+              <i class="far fa-heart restaurants__icon"></i>
+            </figcaption>
+          </figure>
+        </a>
+        <a id="aLaFrancaise" href="#">
+          <figure class="restaurants__container">
+            <img
+              class="restaurants__image"
+              src="./images/restaurants/a_la_française.jpg"
+              alt="Restaurant A la Française"
+            />
+            <figcaption class="restaurants__description">
+              <div class="restaurants__text">
+                <p>A la française</p>
+                <p>Cité rouge</p>
+              </div>
 
-            <i class="far fa-heart restaurants__icon"></i>
-          </figcaption>
-        </figure>
-      </a>
-      <a id="leDeliceDesSens" href="#">
-        <figure class="restaurants__container">
-          <img
-            class="restaurants__image"
-            src="./images/restaurants/le_delice_des_sens.jpg"
-            alt="Restaurant Le delice des sens"
-          />
-          <figcaption class="restaurants__description">
-            <div class="restaurants__text">
-              <p>Le délice des sens</p>
-              <p>Folie-Méricourt</p>
-            </div>
+              <i class="far fa-heart restaurants__icon"></i>
+            </figcaption>
+          </figure>
+        </a>
+        <a id="leDeliceDesSens" href="#">
+          <figure class="restaurants__container">
+            <img
+              class="restaurants__image"
+              src="./images/restaurants/le_delice_des_sens.jpg"
+              alt="Restaurant Le delice des sens"
+            />
+            <figcaption class="restaurants__description">
+              <div class="restaurants__text">
+                <p>Le délice des sens</p>
+                <p>Folie-Méricourt</p>
+              </div>
 
-            <i class="far fa-heart restaurants__icon"></i>
-          </figcaption>
-        </figure>
-      </a>
+              <i class="far fa-heart restaurants__icon"></i>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
     </section>
 
     <footer class="footer">

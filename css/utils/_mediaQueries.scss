@@ -1,0 +1,49 @@
+@media screen and (min-width: 1024px) {
+  //// HEADER ////
+  .header {
+    @include flex(row, center, space-between);
+
+    padding: 2rem 8rem;
+
+    .header__logo_container {
+      box-shadow: none;
+    }
+
+    .header__search_bar {
+      position: relative;
+      background-color: #fff;
+      padding-left: 0;
+      padding-bottom: 1rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 3.5rem;
+        left: 2rem;
+        width: 20rem;
+        height: 0.2rem;
+        background-color: $primary;
+      }
+    }
+
+    .header__search_bar_input {
+      background-color: #fff;
+    }
+  }
+
+  //// HOME INTRO ////
+
+  .home_intro {
+    height: calc(100vh - 12rem);
+    @include flex(row, center, space-around);
+    background-color: #fff;
+
+    &__description_container {
+      position: absolute;
+      width: 70%;
+      height: 50%;
+      margin-left: 8rem;
+      z-index: 1;
+    }
+  }
+}

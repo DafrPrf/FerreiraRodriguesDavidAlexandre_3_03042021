@@ -1,9 +1,9 @@
 @import "./utils/variables";
 @import "./utils/keyframes";
+@import "./utils/mixins";
 @import "./base/reset";
 @import "./base/geral";
 @import "./base/typography";
-@import "./utils/mixins";
 @import "./layout/header";
 @import "./components/buttons";
 @import "./layout/homeIntro";
@@ -11,3 +11,4 @@
 @import "./layout/choiceRestaurants";
 @import "./layout/restaurants";
 @import "./layout/footer";
+@import "./utils/mediaQueries";

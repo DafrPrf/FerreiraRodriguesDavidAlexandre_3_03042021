@@ -2,6 +2,11 @@
   padding: 6rem 2.2rem 6rem 2.2rem;
   background-color: $bcg-lightgrey;
 
+  &--flexRow {
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+  }
+
   &__title {
     font-size: $fz26;
     font-weight: $fw900;
@@ -15,7 +20,7 @@
     border-radius: 1.5rem;
     background-color: #fff;
     box-shadow: $btnShadow;
-    margin: 1.7rem 0;
+    margin: 1.7rem 1rem;
     transition: all 0.5s;
 
     &:hover {

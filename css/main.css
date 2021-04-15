@@ -444,6 +444,24 @@ html {
   background-color: #f6f6f6;
 }
 
+.restaurants--flexRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .restaurants__title {
   font-size: 2.6rem;
   font-weight: 900;
@@ -458,7 +476,7 @@ html {
   background-color: #fff;
   -webkit-box-shadow: 1px 2px 5px 2px #cfcfcf;
           box-shadow: 1px 2px 5px 2px #cfcfcf;
-  margin: 1.7rem 0;
+  margin: 1.7rem 1rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -748,5 +766,69 @@ html {
 
 .footer__icons {
   margin-right: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2rem 8rem;
+  }
+  .header .header__logo_container {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .header .header__search_bar {
+    position: relative;
+    background-color: #fff;
+    padding-left: 0;
+    padding-bottom: 1rem;
+  }
+  .header .header__search_bar::after {
+    content: "";
+    position: absolute;
+    top: 3.5rem;
+    left: 2rem;
+    width: 20rem;
+    height: 0.2rem;
+    background-color: #9356dc;
+  }
+  .header .header__search_bar_input {
+    background-color: #fff;
+  }
+  .home_intro {
+    height: calc(100vh - 12rem);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-color: #fff;
+  }
+  .home_intro__description_container {
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    margin-left: 8rem;
+    z-index: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */
