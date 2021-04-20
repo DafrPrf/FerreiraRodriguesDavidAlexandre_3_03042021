@@ -49,10 +49,13 @@
   }
 
   &__description {
-    width: 25rem;
+    width: 30rem;
     line-height: 2.5rem;
     padding: 1rem;
     font-weight: $fw900;
+    transition: 0.5s;
+    overflow: hidden;
+
     p {
       white-space: nowrap;
       overflow: hidden;
@@ -102,13 +105,7 @@
 
       .fa-check-circle {
         transform: rotate(360deg);
-        transition: transform 0.5s;
-      }
-      .main__description {
-        min-width: 20rem;
-      }
-      .main__price {
-        min-width: 5rem;
+        transition: transform 0.3s;
       }
     }
 
