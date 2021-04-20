@@ -683,7 +683,7 @@ html {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin: 0 0 0.5rem 2rem;
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
 
 .main__card {
@@ -912,39 +912,65 @@ html {
     position: absolute;
     width: 25rem;
     height: 24rem;
-    top: 0.8rem;
-    left: 40rem;
     border-radius: 2rem;
     -o-object-fit: cover;
        object-fit: cover;
+    top: 0.8rem;
+    left: 40rem;
   }
   .main__recipes .img2 {
     opacity: 0;
     position: absolute;
     width: 25rem;
     height: 24rem;
-    top: -8rem;
-    left: 40rem;
     border-radius: 2rem;
     -o-object-fit: cover;
        object-fit: cover;
+    top: -8rem;
+    left: 40rem;
   }
   .main__recipes .img3 {
     opacity: 0;
     position: absolute;
     width: 25rem;
     height: 24rem;
-    top: -17rem;
-    left: 40rem;
     border-radius: 2rem;
     -o-object-fit: cover;
        object-fit: cover;
+    top: -17rem;
+    left: 40rem;
   }
   .main__recipes:hover .img1,
   .main__recipes:hover .img2,
   .main__recipes:hover .img3 {
     -webkit-animation: imgOpacityIn 2s forwards;
             animation: imgOpacityIn 2s forwards;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .how_it_work--flexRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .how_it_work__card {
+    margin-left: 4rem;
+  }
+  .main__recipes .img1,
+  .main__recipes .img2,
+  .main__recipes .img3 {
+    width: 35rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

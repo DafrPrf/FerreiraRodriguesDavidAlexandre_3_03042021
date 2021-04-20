@@ -4,3 +4,12 @@
   align-items: $align-items;
   justify-content: $justify-content;
 }
+
+@mixin recipesCardImg {
+  opacity: 0;
+  position: absolute;
+  width: 25rem;
+  height: 24rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}

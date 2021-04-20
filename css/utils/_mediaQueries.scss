@@ -108,35 +108,23 @@
       position: relative;
 
       .img1 {
-        opacity: 0;
-        position: absolute;
-        width: 25rem;
-        height: 24rem;
+        @include recipesCardImg;
+
         top: 0.8rem;
         left: 40rem;
-        border-radius: 2rem;
-        object-fit: cover;
       }
 
       .img2 {
-        opacity: 0;
-        position: absolute;
-        width: 25rem;
-        height: 24rem;
+        @include recipesCardImg;
+
         top: -8rem;
         left: 40rem;
-        border-radius: 2rem;
-        object-fit: cover;
       }
       .img3 {
-        opacity: 0;
-        position: absolute;
-        width: 25rem;
-        height: 24rem;
+        @include recipesCardImg;
+
         top: -17rem;
         left: 40rem;
-        border-radius: 2rem;
-        object-fit: cover;
       }
 
       &:hover {
@@ -145,6 +133,28 @@
         .img3 {
           animation: imgOpacityIn 2s forwards;
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .how_it_work {
+    &--flexRow {
+      @include flex(row, center, center);
+    }
+
+    &__card {
+      margin-left: 4rem;
+    }
+  }
+
+  .main {
+    &__recipes {
+      .img1,
+      .img2,
+      .img3 {
+        width: 35rem;
       }
     }
   }
