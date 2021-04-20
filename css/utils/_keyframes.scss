@@ -20,3 +20,12 @@
     width: 4rem;
   }
 }
+
+@keyframes imgOpacityIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

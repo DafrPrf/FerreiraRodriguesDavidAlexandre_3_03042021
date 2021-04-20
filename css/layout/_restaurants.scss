@@ -90,6 +90,7 @@
       background-color: $tertiary;
       color: #fff;
       font-size: $fz22;
+      transition: 0.5s;
 
       @include flex(row, center, center);
     }
@@ -97,7 +98,6 @@
     &:hover {
       .main__card--check {
         width: 7rem;
-        transition: width 1s;
       }
 
       .fa-check-circle {
@@ -121,7 +121,7 @@
     }
 
     &--slide3 {
-      animation: slideUp 12s;
+      animation: slideUp 8s;
     }
   }
 }
