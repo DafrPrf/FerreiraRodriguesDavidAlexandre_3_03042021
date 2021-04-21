@@ -55,16 +55,23 @@
   }
 
   &__icon {
+    padding: 0.5rem;
     font-size: $fz22;
     color: #7e7e7e;
+    background: linear-gradient(-137deg, $primary -33%, $secondary 96%);
+    background-repeat: no-repeat;
+    background-size: 100% 0%;
+    background-position: bottom;
+    transition: all 0.8s ease-in-out;
+    background-clip: text;
+    -webkit-background-clip: text;
 
     &:hover {
       font-weight: 900;
-      background: linear-gradient(-137deg, $primary -33%, $secondary 96%);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      transition: all 1s;
+      background-size: 100% 100%;
       cursor: pointer;
     }
   }

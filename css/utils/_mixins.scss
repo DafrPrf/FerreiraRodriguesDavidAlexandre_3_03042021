@@ -13,3 +13,12 @@
   border-radius: 2rem;
   object-fit: cover;
 }
+
+@mixin dots {
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5em;
+  background-color: black;
+  border-radius: 50%;
+  animation: 1.5s bounce infinite ease-in-out;
+}
