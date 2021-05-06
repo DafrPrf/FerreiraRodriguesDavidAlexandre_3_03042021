@@ -618,8 +618,6 @@ html {
 
 .restaurants__icon:hover {
   font-weight: 900;
-  background-clip: text;
-  -webkit-background-clip: text;
   color: transparent;
   background-size: 100% 100%;
   cursor: pointer;

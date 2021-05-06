@@ -6,10 +6,10 @@
 @import "./base/typography";
 @import "./layout/header";
 @import "./components/buttons";
-@import "./layout/homeIntro";
-@import "./layout/howItWork";
-@import "./layout/choiceRestaurants";
+@import "./pages/homeIntro";
+@import "./pages/howItWork";
+@import "./pages/choiceRestaurants";
 @import "./layout/restaurants";
 @import "./layout/footer";
 @import "./utils/mediaQueries";
-@import "./layout/loadingSpinner";
+@import "./components/loadingSpinner";
