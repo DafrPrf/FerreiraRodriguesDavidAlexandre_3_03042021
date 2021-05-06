@@ -1042,6 +1042,9 @@ html {
 }
 
 @media screen and (max-width: 350px) {
+  .header__search_bar_input {
+    width: 100%;
+  }
   .how_it_work__card {
     max-width: 28.4rem;
   }
