@@ -734,7 +734,8 @@ html {
   overflow: hidden;
 }
 
-.main__description p {
+.main__description p,
+.main__description h3 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -808,10 +809,10 @@ html {
 .main__card:hover .fa-check-circle {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
 }
 
 .main__card--slide1 {
@@ -1040,11 +1041,26 @@ html {
   }
 }
 
+@media screen and (max-width: 350px) {
+  .how_it_work__card {
+    max-width: 28.4rem;
+  }
+  .restaurants__container {
+    width: 28.4rem;
+  }
+  .main__card {
+    width: 28.4rem;
+  }
+  .main__price {
+    margin-right: 1rem;
+  }
+}
+
 .ldg {
   position: fixed;
   z-index: 2;
-  -webkit-animation: 0.8s ease-in 2s imgOpacityOut forwards;
-          animation: 0.8s ease-in 2s imgOpacityOut forwards;
+  -webkit-animation: 0.1s ease-in 2s imgOpacityOut forwards;
+          animation: 0.1s ease-in 2s imgOpacityOut forwards;
   background-color: #f6f6f6;
   width: 100%;
   height: 100vh;
@@ -1061,13 +1077,6 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.ldg__title {
-  font-family: "Shrikhand", cursive;
-  font-size: 6rem;
-  font-weight: 900;
-  margin-bottom: 10rem;
 }
 
 .ldg__spinner {

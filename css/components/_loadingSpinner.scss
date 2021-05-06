@@ -1,18 +1,11 @@
 .ldg {
   position: fixed;
   z-index: 2;
-  animation: 0.8s ease-in 2s imgOpacityOut forwards;
+  animation: 0.1s ease-in 2s imgOpacityOut forwards;
   background-color: $bcg-lightgrey;
   width: 100%;
   height: 100vh;
   @include flex(column, center, center);
-
-  &__title {
-    font-family: $shrikhand;
-    font-size: 6rem;
-    font-weight: $fw900;
-    margin-bottom: 10rem;
-  }
 
   &__spinner {
     width: 8rem;
@@ -30,6 +23,7 @@
       margin-top: 2rem;
     }
   }
+
   &__dots {
     position: relative;
     width: 3rem;

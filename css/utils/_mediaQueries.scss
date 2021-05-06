@@ -159,3 +159,27 @@
     }
   }
 }
+
+@media screen and (max-width: 350px) {
+  .how_it_work {
+    &__card {
+      max-width: 28.4rem;
+    }
+  }
+
+  .restaurants {
+    &__container {
+      width: 28.4rem;
+    }
+  }
+
+  .main {
+    &__card {
+      width: 28.4rem;
+    }
+
+    &__price {
+      margin-right: 1rem;
+    }
+  }
+}
