@@ -63,13 +63,11 @@
     background-size: 100% 0%;
     background-position: bottom;
     transition: all 0.8s ease-in-out;
-    background-clip: text;
+    // background-clip: text;
     -webkit-background-clip: text;
 
     &:hover {
       font-weight: 900;
-      // background-clip: text;
-      // -webkit-background-clip: text;
       color: transparent;
       background-size: 100% 100%;
       cursor: pointer;

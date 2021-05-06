@@ -385,12 +385,14 @@ html {
   background: linear-gradient(-5deg, #9356dc 0%, #ff79da 96%);
   -webkit-box-shadow: 1px 2px 5px 2px #cfcfcf;
           box-shadow: 1px 2px 5px 2px #cfcfcf;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .btn:hover {
   opacity: 0.8;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .main__btn {
@@ -612,7 +614,6 @@ html {
   background-position: bottom;
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
-  background-clip: text;
   -webkit-background-clip: text;
 }
 
